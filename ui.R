@@ -6,6 +6,7 @@
 #
 
 library(shiny)
+require(markdown)
 
 shinyUI(fluidPage(
     tabsetPanel(
@@ -47,7 +48,10 @@ shinyUI(fluidPage(
                       used for either diagnosis or treatment or both for any health 
                       related problem or disease. Always seek the advice from a 
                       qualified physician for medical diagnosis and treatment."),
-                    tags$head(tags$script(src="app.js"))
+                    tags$head(tags$script(src="app.js")),
+                    h3("Source on github"),
+                    tags$a(href="https://github.com/jhuno137/bpcalculator","https://github.com/jhuno137/bpcalculator")
+                    
                 )
             )
         ),
